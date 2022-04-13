@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(to left, #6495ed, #9f64ed);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 100px auto;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+div {
+  width: 180px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.288);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+.cat:hover,
+.dog:hover,
+.fish:hover {
+  border: 2px solid white;
+  transform: translateY(-5px);
+}
+h1 {
+  color: white;
+  font-weight: bold;
+  margin: 20px auto;
+}
+hr {
+  opacity: 0.4;
+}
+section {
+  line-height: 35px;
+  color: black;
+  margin: 30px auto;
+}
+p {
+  line-height: 20px;
+  color: black;
+  margin: 30px auto;
+}
+.emoji {
+  line-height: 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.button {
+  position: relative;
+  padding: 0;
+  margin: auto;
+  width: 90%;
+  height: 50px;
+  border-radius: 5px;
+  background: yellow;
+  transition: ease 0.5s;
+}
+.button:hover {
+  opacity: 0.85;
+}
+.price {
+  font-size: 35pt;
+  font-weight: lighter;
+}
+.cat {
+  width: 220px;
+}
+.dog {
+  width: 200px;
+}
+.fish {
+  width: 230px;
+}
+@media (max-width: 660px) {
+  .container {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0;
+    height: auto;
+  }
+  .cat,
+  .dog,
+  .fish {
+    width: 400px;
+    flex-wrap: wrap;
+  }
+}
